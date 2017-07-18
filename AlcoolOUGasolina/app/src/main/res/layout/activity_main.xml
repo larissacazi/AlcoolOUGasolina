@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_green_dark"
+    tools:context="zimmermann.larissa.alcoolougasolina.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="386dp"
+        android:layout_height="77dp"
+        app:srcCompat="@drawable/logo"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="29dp"
+        android:layout_marginTop="23dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/alcoolTextID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/alcoolString"
+        android:textSize="@dimen/alcoolString"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="161dp"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignEnd="@+id/alcoolPriceId" />
+
+    <TextView
+        android:id="@+id/gasolinaTextId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gasolinaString"
+        android:textSize="@dimen/alcoolString"
+        tools:layout_editor_absoluteX="212dp"
+        tools:layout_editor_absoluteY="161dp"
+        android:layout_alignBaseline="@+id/alcoolTextID"
+        android:layout_alignBottom="@+id/alcoolTextID"
+        android:layout_alignStart="@+id/gasPriceId" />
+
+    <EditText
+        android:id="@+id/gasPriceId"
+        android:layout_width="130dp"
+        android:layout_height="33dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:padding="@dimen/paddingNumber"
+        tools:layout_editor_absoluteX="212dp"
+        tools:layout_editor_absoluteY="192dp"
+        android:layout_marginEnd="46dp"
+        android:layout_alignBaseline="@+id/alcoolPriceId"
+        android:layout_alignBottom="@+id/alcoolPriceId"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/alcoolPriceId"
+        android:layout_width="113dp"
+        android:layout_height="33dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:padding="@dimen/paddingNumber"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="192dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginStart="47dp"
+        android:layout_below="@+id/alcoolTextID"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/checkButtonId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkText"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="258dp"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/alcoolTextID"
+        android:layout_alignEnd="@+id/gasPriceId" />
+
+    <TextView
+        android:id="@+id/resultTextID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkButtonId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp"
+        android:textSize="@dimen/resultSize" />
+</RelativeLayout>

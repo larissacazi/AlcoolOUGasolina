@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="alcoolString">15sp</dimen>
+    <dimen name="paddingNumber">5dp</dimen>
+    <dimen name="resultSize">18sp</dimen>
+</resources>
