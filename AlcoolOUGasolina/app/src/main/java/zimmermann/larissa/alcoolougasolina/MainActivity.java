@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -32,18 +33,22 @@ public class MainActivity extends AppCompatActivity {
 
                 if(priceAlcool.isEmpty()) {
                     if(priceGas.isEmpty()) {
-                        result.setText("Entre com os preços do Álcool e da Gasolina.");
+                        result.setText("");
+                        Toast.makeText(getApplicationContext(), "Entre com os preços do Álcool e da Gasolina.", Toast.LENGTH_SHORT).show();
                     }
                     else {
-                        result.setText("Entre com o preço do Álcool.");
+                        result.setText("");
+                        Toast.makeText(getApplicationContext(), "Entre com o preço do Álcool.", Toast.LENGTH_SHORT).show();
                     }
                 }
                 else if(priceGas.isEmpty()) {
                     if(priceAlcool.isEmpty()) {
-                        result.setText("Entre com os preços do Álcool e da Gasolina.");
+                        result.setText("");
+                        Toast.makeText(getApplicationContext(), "Entre com os preços do Álcool e da Gasolina.", Toast.LENGTH_SHORT).show();
                     }
                     else {
-                        result.setText("Entre com o preço da Gasolina.");
+                        result.setText("");
+                        Toast.makeText(getApplicationContext(), "Entre com o preço da Gasolina.", Toast.LENGTH_SHORT).show();
                     }
                 }
                 else {
