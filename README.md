@@ -1,2 +1,4 @@
 # AlcoolOUGasolina
-App que calcula qual combustível compesa abastecer. Álcool ou Gasolina?
+App que calcula qual combustível compensa abastecer. Álcool ou Gasolina?
+
+# Created by Larissa Cardoso Zimmermann
